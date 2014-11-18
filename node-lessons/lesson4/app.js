@@ -7,6 +7,23 @@ var fs = require('fs');
 
 var cnodeUrl = 'https://cnodejs.org';
 
+
+		var ep = new eventproxy();
+		var ep1 = new eventproxy();
+		var ep2 = new eventproxy();
+
+		ep1.after('all', 2, function(datas){
+			var i = 0;
+			var tem1 = datas[0];
+			var tem2 = datas[1];
+			console.log('222222222222222222222222222222222')
+			console.log(tem1);
+			console.log(tem2);
+
+
+		})
+
+
 superagent.get(cnodeUrl)
 	.end(function(err, sres){
 		if(err){
@@ -22,7 +39,7 @@ superagent.get(cnodeUrl)
 		});
 		console.log(topicUrls);
 
-		var ep = new eventproxy();
+
 		var finalData = [];
 
 		var finalDate = [];
@@ -50,9 +67,8 @@ superagent.get(cnodeUrl)
 			});
 			console.log('final:');
 			console.log(finalDate);
+			ep1.emit('all', finalDate);
 		});
-
-
 
 			var i = 0;
 		topicUrls.forEach(function(topicUrl){
@@ -75,30 +91,39 @@ superagent.get(cnodeUrl)
 			var ret = {};
 			 superagent.get(url)
 				.end(function(err, sres){
+
+		ep2.after('allData', 40, function(datas){
+				console.log('123');
+				datas = datas.map(function(datajson){
+					var dataUrl = datajson.url;
+					var dataName = datajson.name;
+					var dataScore = datajson.score;
+					return ({
+						dataUrl:dataUrl,
+						name: dataName,
+						score: dataScore
+					})
+
+				})
+				console.log(datas);
+				ep1.emit('all', datas);
+				});
+
 					console.log('url in getA N S END !!!!!!!!!!!!!');
 					if(err){
 						console.log(err);
 					}
-					var ep2 = new eventproxy();
 					var $ = cheerio.load(sres.text);
 					var name = $('.userinfo a').html();
-					var score = $('.user_prifile .big').html();
+					var score = $('.userinfo .big').eq(0).html();
 					console.log('name+score'+name+' '+score)
+					ep2.emit('allData', {
+						url: url,
+						name: name,
+						score:score
+					})
 
 
-		ep2.after('allData', 40, function(datas){
-			console.log('123');
-			datas = datas.map(function(datajson){
-				var dataUrl = datajson.url;
-				var dataName = datajson.name;
-				var dataScore = datajson.score;
-				return ({
-					name: dataName,
-					score: dataScore
-				})
-
-			})
-			console.log(datas)
+	
 		})
-	})
 }
