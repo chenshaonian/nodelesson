@@ -1,0 +1,302 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'i',
+1 verbose cli   'macha',
+1 verbose cli   'should',
+1 verbose cli   'supertest',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 warn package.json lesson7@1.0.1 No repository field.
+5 warn package.json lesson7@1.0.1 No README data
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'macha', null ]
+8 verbose cache add name=undefined spec="macha" args=["macha",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'macha',
+9 verbose parsed url   path: 'macha',
+9 verbose parsed url   href: 'macha' }
+10 verbose cache add [ 'should', null ]
+11 verbose cache add name=undefined spec="should" args=["should",null]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'should',
+12 verbose parsed url   path: 'should',
+12 verbose parsed url   href: 'should' }
+13 verbose cache add [ 'supertest', null ]
+14 verbose cache add name=undefined spec="supertest" args=["supertest",null]
+15 verbose parsed url { protocol: null,
+15 verbose parsed url   slashes: null,
+15 verbose parsed url   auth: null,
+15 verbose parsed url   host: null,
+15 verbose parsed url   port: null,
+15 verbose parsed url   hostname: null,
+15 verbose parsed url   hash: null,
+15 verbose parsed url   search: null,
+15 verbose parsed url   query: null,
+15 verbose parsed url   pathname: 'supertest',
+15 verbose parsed url   path: 'supertest',
+15 verbose parsed url   href: 'supertest' }
+16 silly lockFile fbcbc9bc-macha macha
+17 verbose lock macha /root/.npm/fbcbc9bc-macha.lock
+18 silly lockFile c6dc9bc9-should should
+19 verbose lock should /root/.npm/c6dc9bc9-should.lock
+20 silly lockFile 20cf0e48-supertest supertest
+21 verbose lock supertest /root/.npm/20cf0e48-supertest.lock
+22 silly lockFile fbcbc9bc-macha macha
+23 silly lockFile fbcbc9bc-macha macha
+24 silly lockFile c6dc9bc9-should should
+25 silly lockFile c6dc9bc9-should should
+26 silly lockFile 20cf0e48-supertest supertest
+27 silly lockFile 20cf0e48-supertest supertest
+28 verbose addNamed [ 'macha', '' ]
+29 verbose addNamed [ null, '*' ]
+30 silly lockFile 2d0a0c87-macha macha@
+31 verbose lock macha@ /root/.npm/2d0a0c87-macha.lock
+32 verbose addNamed [ 'should', '' ]
+33 verbose addNamed [ null, '*' ]
+34 silly lockFile 6159124d-should should@
+35 verbose lock should@ /root/.npm/6159124d-should.lock
+36 verbose addNamed [ 'supertest', '' ]
+37 verbose addNamed [ null, '*' ]
+38 silly lockFile 2d5c0939-supertest supertest@
+39 verbose lock supertest@ /root/.npm/2d5c0939-supertest.lock
+40 silly addNameRange { name: 'macha', range: '*', hasData: false }
+41 silly addNameRange { name: 'should', range: '*', hasData: false }
+42 silly addNameRange { name: 'supertest', range: '*', hasData: false }
+43 verbose request where is /macha
+44 verbose request registry https://registry.npmjs.org/
+45 verbose request id 5c6686a54910ab85
+46 verbose url raw /macha
+47 verbose url resolving [ 'https://registry.npmjs.org/', './macha' ]
+48 verbose url resolved https://registry.npmjs.org/macha
+49 verbose request where is https://registry.npmjs.org/macha
+50 info trying registry request attempt 1 at 19:17:20
+51 http GET https://registry.npmjs.org/macha
+52 verbose request where is /supertest
+53 verbose request registry https://registry.npmjs.org/
+54 verbose url raw /supertest
+55 verbose url resolving [ 'https://registry.npmjs.org/', './supertest' ]
+56 verbose url resolved https://registry.npmjs.org/supertest
+57 verbose request where is https://registry.npmjs.org/supertest
+58 info trying registry request attempt 1 at 19:17:20
+59 http GET https://registry.npmjs.org/supertest
+60 verbose request where is /should
+61 verbose request registry https://registry.npmjs.org/
+62 verbose url raw /should
+63 verbose url resolving [ 'https://registry.npmjs.org/', './should' ]
+64 verbose url resolved https://registry.npmjs.org/should
+65 verbose request where is https://registry.npmjs.org/should
+66 info trying registry request attempt 1 at 19:17:20
+67 verbose etag "6R4J1PM2PTYPEYCMD1RTCWGX5"
+68 http GET https://registry.npmjs.org/should
+69 http 404 https://registry.npmjs.org/macha
+70 verbose headers { date: 'Tue, 02 Dec 2014 03:17:20 GMT',
+70 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+70 verbose headers   'content-type': 'application/json',
+70 verbose headers   'cache-control': 'max-age=0',
+70 verbose headers   'content-length': '52',
+70 verbose headers   'accept-ranges': 'bytes',
+70 verbose headers   via: '1.1 varnish',
+70 verbose headers   age: '0',
+70 verbose headers   'x-served-by': 'cache-ty66-TYO',
+70 verbose headers   'x-cache': 'MISS',
+70 verbose headers   'x-cache-hits': '0',
+70 verbose headers   'x-timer': 'S1417490239.998264,VS0,VE188',
+70 verbose headers   'keep-alive': 'timeout=10, max=50',
+70 verbose headers   connection: 'Keep-Alive' }
+71 silly registry.get cb [ 404,
+71 silly registry.get   { date: 'Tue, 02 Dec 2014 03:17:20 GMT',
+71 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+71 silly registry.get     'content-type': 'application/json',
+71 silly registry.get     'cache-control': 'max-age=0',
+71 silly registry.get     'content-length': '52',
+71 silly registry.get     'accept-ranges': 'bytes',
+71 silly registry.get     via: '1.1 varnish',
+71 silly registry.get     age: '0',
+71 silly registry.get     'x-served-by': 'cache-ty66-TYO',
+71 silly registry.get     'x-cache': 'MISS',
+71 silly registry.get     'x-cache-hits': '0',
+71 silly registry.get     'x-timer': 'S1417490239.998264,VS0,VE188',
+71 silly registry.get     'keep-alive': 'timeout=10, max=50',
+71 silly registry.get     connection: 'Keep-Alive' } ]
+72 silly lockFile 2d0a0c87-macha macha@
+73 silly lockFile 2d0a0c87-macha macha@
+74 http 200 https://registry.npmjs.org/should
+75 silly registry.get cb [ 200,
+75 silly registry.get   { date: 'Tue, 02 Dec 2014 03:17:20 GMT',
+75 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+75 silly registry.get     etag: '"D4ZCZZD6GHHVH47WYP1LWM33N"',
+75 silly registry.get     'content-type': 'application/json',
+75 silly registry.get     'cache-control': 'max-age=60',
+75 silly registry.get     'content-length': '76728',
+75 silly registry.get     'accept-ranges': 'bytes',
+75 silly registry.get     via: '1.1 varnish',
+75 silly registry.get     age: '0',
+75 silly registry.get     'x-served-by': 'cache-ty66-TYO',
+75 silly registry.get     'x-cache': 'HIT',
+75 silly registry.get     'x-cache-hits': '1',
+75 silly registry.get     'x-timer': 'S1417490240.009620,VS0,VE117',
+75 silly registry.get     vary: 'Accept',
+75 silly registry.get     'keep-alive': 'timeout=10, max=50',
+75 silly registry.get     connection: 'Keep-Alive' } ]
+76 silly addNameRange number 2 { name: 'should', range: '*', hasData: true }
+77 silly addNameRange versions [ 'should',
+77 silly addNameRange   [ '0.0.1',
+77 silly addNameRange     '0.0.2',
+77 silly addNameRange     '0.0.3',
+77 silly addNameRange     '0.0.4',
+77 silly addNameRange     '0.1.0',
+77 silly addNameRange     '0.2.0',
+77 silly addNameRange     '0.2.1',
+77 silly addNameRange     '0.3.0',
+77 silly addNameRange     '0.3.1',
+77 silly addNameRange     '0.3.2',
+77 silly addNameRange     '0.4.0',
+77 silly addNameRange     '0.4.1',
+77 silly addNameRange     '0.4.2',
+77 silly addNameRange     '0.5.0',
+77 silly addNameRange     '0.5.1',
+77 silly addNameRange     '0.6.0',
+77 silly addNameRange     '0.6.1',
+77 silly addNameRange     '0.6.2',
+77 silly addNameRange     '0.6.3',
+77 silly addNameRange     '1.0.0',
+77 silly addNameRange     '1.1.0',
+77 silly addNameRange     '1.1.1',
+77 silly addNameRange     '1.2.0',
+77 silly addNameRange     '1.2.1',
+77 silly addNameRange     '1.2.2',
+77 silly addNameRange     '1.3.0',
+77 silly addNameRange     '2.0.0',
+77 silly addNameRange     '2.0.1',
+77 silly addNameRange     '2.0.2',
+77 silly addNameRange     '2.1.0',
+77 silly addNameRange     '2.1.1',
+77 silly addNameRange     '3.0.0',
+77 silly addNameRange     '3.0.1',
+77 silly addNameRange     '3.1.0',
+77 silly addNameRange     '3.1.1',
+77 silly addNameRange     '3.1.2',
+77 silly addNameRange     '3.1.3',
+77 silly addNameRange     '3.1.4',
+77 silly addNameRange     '3.2.0-beta1',
+77 silly addNameRange     '3.2.0',
+77 silly addNameRange     '3.3.0',
+77 silly addNameRange     '3.3.1',
+77 silly addNameRange     '3.3.2',
+77 silly addNameRange     '4.0.0',
+77 silly addNameRange     '4.0.1',
+77 silly addNameRange     '4.0.3',
+77 silly addNameRange     '4.0.4',
+77 silly addNameRange     '4.1.0',
+77 silly addNameRange     '4.2.0',
+77 silly addNameRange     '4.2.1',
+77 silly addNameRange     '4.3.0' ] ]
+78 verbose addNamed [ 'should', '4.3.0' ]
+79 verbose addNamed [ '4.3.0', '4.3.0' ]
+80 silly lockFile 718518fc-should-4-3-0 should@4.3.0
+81 verbose lock should@4.3.0 /root/.npm/718518fc-should-4-3-0.lock
+82 silly lockFile 718518fc-should-4-3-0 should@4.3.0
+83 silly lockFile 718518fc-should-4-3-0 should@4.3.0
+84 silly lockFile 6159124d-should should@
+85 silly lockFile 6159124d-should should@
+86 http 200 https://registry.npmjs.org/supertest
+87 silly registry.get cb [ 200,
+87 silly registry.get   { date: 'Tue, 02 Dec 2014 03:17:20 GMT',
+87 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+87 silly registry.get     etag: '"BZ7AK851CWY2I066FR21WUQD4"',
+87 silly registry.get     'content-type': 'application/json',
+87 silly registry.get     'cache-control': 'max-age=60',
+87 silly registry.get     'content-length': '33731',
+87 silly registry.get     'accept-ranges': 'bytes',
+87 silly registry.get     via: '1.1 varnish',
+87 silly registry.get     age: '0',
+87 silly registry.get     'x-served-by': 'cache-ty66-TYO',
+87 silly registry.get     'x-cache': 'HIT',
+87 silly registry.get     'x-cache-hits': '1',
+87 silly registry.get     'x-timer': 'S1417490240.064902,VS0,VE745',
+87 silly registry.get     vary: 'Accept',
+87 silly registry.get     'keep-alive': 'timeout=10, max=50',
+87 silly registry.get     connection: 'Keep-Alive' } ]
+88 silly addNameRange number 2 { name: 'supertest', range: '*', hasData: true }
+89 silly addNameRange versions [ 'supertest',
+89 silly addNameRange   [ '0.0.1',
+89 silly addNameRange     '0.1.0',
+89 silly addNameRange     '0.1.1',
+89 silly addNameRange     '0.1.2',
+89 silly addNameRange     '0.2.0',
+89 silly addNameRange     '0.3.0',
+89 silly addNameRange     '0.3.1',
+89 silly addNameRange     '0.4.0',
+89 silly addNameRange     '0.4.1',
+89 silly addNameRange     '0.4.2',
+89 silly addNameRange     '0.5.0',
+89 silly addNameRange     '0.5.1',
+89 silly addNameRange     '0.6.0',
+89 silly addNameRange     '0.6.1',
+89 silly addNameRange     '0.7.0',
+89 silly addNameRange     '0.7.1',
+89 silly addNameRange     '0.8.0',
+89 silly addNameRange     '0.8.1',
+89 silly addNameRange     '0.8.2',
+89 silly addNameRange     '0.8.3',
+89 silly addNameRange     '0.9.0',
+89 silly addNameRange     '0.9.1',
+89 silly addNameRange     '0.9.2',
+89 silly addNameRange     '0.10.0',
+89 silly addNameRange     '0.11.0',
+89 silly addNameRange     '0.12.0',
+89 silly addNameRange     '0.12.1',
+89 silly addNameRange     '0.13.0',
+89 silly addNameRange     '0.14.0',
+89 silly addNameRange     '0.15.0' ] ]
+90 verbose addNamed [ 'supertest', '0.15.0' ]
+91 verbose addNamed [ '0.15.0', '0.15.0' ]
+92 silly lockFile afa2c123-supertest-0-15-0 supertest@0.15.0
+93 verbose lock supertest@0.15.0 /root/.npm/afa2c123-supertest-0-15-0.lock
+94 silly lockFile 16745018-g-supertest-supertest-0-15-0-tgz https://registry.npmjs.org/supertest/-/supertest-0.15.0.tgz
+95 verbose lock https://registry.npmjs.org/supertest/-/supertest-0.15.0.tgz /root/.npm/16745018-g-supertest-supertest-0-15-0-tgz.lock
+96 verbose addRemoteTarball [ 'https://registry.npmjs.org/supertest/-/supertest-0.15.0.tgz',
+96 verbose addRemoteTarball   '86118695de4be58869b3ee94c45e1d084ca7fac5' ]
+97 info retry fetch attempt 1 at 19:17:21
+98 verbose fetch to= /tmp/npm-8418-NU-Vfl90/registry.npmjs.org/supertest/-/supertest-0.15.0.tgz
+99 http GET https://registry.npmjs.org/supertest/-/supertest-0.15.0.tgz
+100 http 200 https://registry.npmjs.org/supertest/-/supertest-0.15.0.tgz
+101 silly lockFile 16745018-g-supertest-supertest-0-15-0-tgz https://registry.npmjs.org/supertest/-/supertest-0.15.0.tgz
+102 silly lockFile 16745018-g-supertest-supertest-0-15-0-tgz https://registry.npmjs.org/supertest/-/supertest-0.15.0.tgz
+103 silly lockFile afa2c123-supertest-0-15-0 supertest@0.15.0
+104 silly lockFile afa2c123-supertest-0-15-0 supertest@0.15.0
+105 silly lockFile 2d5c0939-supertest supertest@
+106 silly lockFile 2d5c0939-supertest supertest@
+107 error 404 404 Not Found: macha
+107 error 404
+107 error 404 'macha' is not in the npm registry.
+107 error 404 You should bug the author to publish it
+107 error 404 It was specified as a dependency of 'lesson7'
+107 error 404
+107 error 404 Note that you can also install from a
+107 error 404 tarball, folder, or http url, or git url.
+108 error System Linux 3.2.0-23-generic-pae
+109 error command "/usr/local/bin/node" "/usr/local/bin/npm" "i" "macha" "should" "supertest" "--save-dev"
+110 error cwd /node/node-lessons/lesson7
+111 error node -v v0.10.33
+112 error npm -v 1.4.28
+113 error code E404
+114 verbose exit [ 1, true ]

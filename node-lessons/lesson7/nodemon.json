@@ -1,0 +1,7 @@
+{
+  "verbose": true,
+  "ignore": ["fixtures/*"],
+  "execMap": {
+    "node": "node apps.js"
+  }
+}

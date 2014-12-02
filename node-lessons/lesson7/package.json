@@ -1,0 +1,24 @@
+{
+  "name": "lesson7",
+  "version": "1.0.1",
+  "description": "supertest",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bernie",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.10.4"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-nodemon": "^0.3.0",
+    "mocha": "^2.0.1",
+    "nodemon": "^1.2.1",
+    "should": "^4.3.0",
+    "supertest": "^0.15.0"
+  }
+}
